@@ -1,0 +1,33 @@
+@mixin centerByFlex(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+
+
+}
+$shadow:
+ 30px 24px 172px 16px rgba(0,0,0,0.75);
+
+ 
+.card{
+    
+    position: absolute;
+    left: 32%;
+    top: 32%;
+    border-radius: 10px;
+    width: 500px;
+    height: 320px;
+    background: rgb(0,44,255);
+    transition: 500ms;
+    box-shadow: $shadow;
+    animation: move 1s infinite;
+
+    
+}
+
+span.one{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
