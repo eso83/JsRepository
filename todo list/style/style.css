@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(60deg ,#6d6d6d ,#252525);
+}
+header{
+    color: white;
+    transform: translate( -10px, 20px);
+}
+form,header{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todoInput{
+    padding: 1px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 25px;
+}
+
+.todoButton{
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    padding: 2px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 5px;
+    transition: 0.3s;
+    background-color: yellowgreen;
+    height: 30px;
+    width: 50px;
+}
+.todoButton:hover{
+  background-color: green;
+}
+.todoList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+.todo{
+    width: 250px;
+    height: 25px;
+    background-color: rgb(163, 163, 163);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 1px;
+    transition: all 0.75s ease;
+    border-radius: 2px;
+}
+.todo li{
+    flex: 1;
+}
+.checkBtn{
+    padding: 1px;
+    margin-right: 2px;
+    background-color: #10A19D;
+    transition: 0.5s;
+}
+.deleteBtn{
+    padding: 1px;
+    background-color: tomato;
+    transition: 0.5s;
+}
+.deleteBtn:hover{
+    background-color: red;
+}
+.checkBtn:hover{
+    background-color: green;
+}
+.Done{
+    opacity: 0.5;
+    transform: translateX(-10px);
+    background-color: gray;
+}
+.fall{
+    transform: translateX(250px) ;
+    opacity: 0;
+}
